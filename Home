@@ -28,17 +28,3 @@
 </div>
 <div id="left">&nbsp;</div>
 <div id="content">
-
-</div>
-<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2393307-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-<div id="veed-recorder-root"></div><div class="calendly-frame-tag" manager_id="97cc0a02-92c9-47e8-a5fc-72225f80fffb" id="97cc0a02-92c9-47e8-a5fc-72225f80fffb" style="height: 0px; width: 0px; visibility: hidden;"></div><div class="calendly-opti-root calendly-lifecycle-optibutton_singleton"></div></body><div style="position: fixed; z-index: 9999999;"></div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
