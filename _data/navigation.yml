@@ -1,7 +1,7 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Thoughts"
+    url: /thoughts/
   - title: "Bookshelf"
     url: /bookshelf/
-  - title: "Blog"
-    url: /posts/
