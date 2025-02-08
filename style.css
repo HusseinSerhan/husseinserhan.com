@@ -1,18 +1,19 @@
+/* Base styles */
 body {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif; /* Added fallback fonts */
   font-size: 13px;
+  line-height: 1.4;
+  color: #333;
 }
 
+/* Navigation menu */
 #menu {
   float: right;
   margin-top: 30px;
   margin-right: 20px;
   text-align: right;
   width: 150px;
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
-}
-
-#menu .title {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #menu ul {
@@ -21,14 +22,17 @@ body {
   padding: 0;
 }
 
-#menu li {
-}
-
 #menu li a {
   display: inline-block;
   color: #0864c7;
+  text-decoration: none; /* Makes links cleaner */
 }
 
+#menu li a:hover {
+  text-decoration: underline; /* Better hover state */
+}
+
+/* Layout */
 #left {
   height: 1px;
   float: left;
@@ -46,8 +50,11 @@ body {
   width: 500px;
 }
 
-#content h1, #content h2, #content h3 {
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
+/* Typography */
+#content h1, 
+#content h2, 
+#content h3 {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -55,14 +62,22 @@ body {
   margin-top: 2em;
 }
 
-#content .byline, #content .byline a, #content .note {
-  font-size: 10px;
-  color: #aaa;
-}
-
-#content p, #content ul {
+#content p, 
+#content ul {
   color: #333;
   line-height: 18px;
+}
+
+#content li {
+  margin-bottom: 0.7em;
+}
+
+/* Helper classes */
+#content .byline, 
+#content .byline a, 
+#content .note {
+  font-size: 10px;
+  color: #aaa;
 }
 
 #content sup.note {
@@ -74,6 +89,7 @@ body {
   margin-top: 0;
 }
 
+/* Footer section */
 #content .thanks {
   margin-top: 2em;
   padding-top: 1em;
@@ -87,19 +103,50 @@ body {
   color: #777;
 }
 
-#content li {
-  margin-bottom: 0.7em;
-}
-
+/* Blog post spacing */
 .post + .post {
   margin-top: 50px;
 }
 
+/* Subscript and superscript */
 sup, sub {
   vertical-align: baseline;
   position: relative;
   top: -0.4em;
 }
+
 sub { 
   top: 0.4em; 
+}
+
+/* Profile image styles */
+.profile-img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  #content {
+    width: 90%;
+    margin: 15px auto;
+    float: none;
+  }
+  
+  #menu {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #left {
+    display: none;
+  }
+  
+  .profile-img {
+    max-width: 100%;
+  }
 }
